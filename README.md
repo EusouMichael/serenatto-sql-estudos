@@ -1,12 +1,14 @@
 # Serenatto Café & Bistrô — Estudos Práticos de SQL
 
-Projeto de estudos em SQL baseado no cenário da **Serenatto Café & Bistrô**, utilizando **SQLite**.
+Projeto de estudos em **SQL e banco de dados relacional**, baseado no cenário da Serenatto Café & Bistrô e desenvolvido com **SQLite**.
 
-O objetivo dos exercícios foi praticar a criação e manipulação de um banco de dados relacional, consultas SQL e recursos como `JOIN`, subconsultas, `UNION/UNION ALL`, `VIEW`, `TRIGGER`, `PRAGMA`, `UPDATE`, `DELETE` e transações.
+## 🎯 Objetivo
 
-O material de estudo descreve o desafio como uma centralização de informações de diferentes fontes em um único banco de dados, usando SQLite Online para criação das tabelas e execução das consultas.
+Praticar, de forma progressiva, a criação, carga, consulta e manipulação de um banco de dados relacional, explorando recursos importantes da linguagem SQL.
 
-## Estrutura
+O cenário proposto envolve a centralização de informações da empresa em um único banco de dados, utilizando SQLite para criar tabelas e executar consultas.
+
+## 🗂️ Estrutura do projeto
 
 ```text
 serenatto-sql-estudos/
@@ -22,12 +24,14 @@ serenatto-sql-estudos/
 │   ├── 04_views/
 │   ├── 05_triggers/
 │   └── 06_atualizacoes_transacoes/
+├── .gitignore
 └── README.md
 ```
 
-## Conteúdos praticados
+## 📚 Conteúdos praticados
 
 ### 1. Modelagem
+
 - `CREATE TABLE`
 - Chaves primárias
 - Chaves estrangeiras
@@ -37,14 +41,16 @@ serenatto-sql-estudos/
 - Chave composta em `Itens_Pedido`
 
 ### 2. Carga de dados
-- `INSERT INTO`
-- Carga de produtos, clientes, colaboradores, fornecedores, pedidos e itens de pedidos.
 
-### 3. Consultas
+- `INSERT INTO`
+- Inserção de produtos, clientes, colaboradores, fornecedores, pedidos e itens de pedidos
+
+### 3. Consultas SQL
+
 - `SELECT`
 - `WHERE`
-- `HAVING`
 - `GROUP BY`
+- `HAVING`
 - Funções de agregação
 - `INNER JOIN`
 - `LEFT JOIN`
@@ -56,52 +62,54 @@ serenatto-sql-estudos/
 - `UNION ALL`
 
 ### 4. Views
+
 - Criação de `VIEW`
 - Consultas sobre views
-- Aplicação de filtros sobre views
-- Uso de views para simplificar consultas e controlar a exposição de dados
+- Aplicação de filtros em views
+- Uso de views para simplificar consultas e controlar a exposição de informações
 
 ### 5. Triggers
+
 - Criação de trigger `AFTER INSERT`
 - Atualização automática de uma tabela de faturamento diário
-- Teste do comportamento da trigger após inserção em `Itens_Pedido`
+- Teste do comportamento da trigger após inserções em `Itens_Pedido`
 
 ### 6. Atualização e integridade
+
 - `PRAGMA FOREIGN_KEY = ON`
 - `UPDATE`
 - `DELETE`
 - `ON DELETE CASCADE`
 - Conceitos de `COMMIT` e `ROLLBACK`
 
-## Banco de dados
+## 🗄️ Banco de dados
 
-Foram preservadas duas versões do banco:
+Foram mantidas duas versões do banco utilizadas durante os estudos:
 
-- `SQLite_base.db`: estado inicial/base dos exercícios.
-- `SQLite_2_final_estudo.db`: versão posterior dos estudos, incluindo a tabela `Faturamento_Diario` utilizada no exercício de trigger.
+- **`SQLite_base.db`** — estado inicial/base dos exercícios.
+- **`SQLite_2_final_estudo.db`** — versão posterior utilizada durante os estudos, incluindo a tabela `Faturamento_Diario` usada no exercício de trigger.
 
-## Observações importantes
+## ⚠️ Observações
 
-Este repositório tem caráter **educacional**. Os arquivos foram organizados a partir dos exercícios realizados durante os estudos, mantendo inclusive exemplos incompletos ou em desenvolvimento para registrar a evolução do aprendizado.
+Este é um **repositório educacional**, criado para registrar a evolução prática nos estudos de SQL.
 
-Antes de apresentar os scripts como código de produção, recomenda-se revisar:
-- compatibilidade de sintaxe entre SQLite e outros SGBDs;
-- nomes de tabelas e colunas;
-- regras de integridade referencial;
-- consultas ainda incompletas;
-- uso de `Quantidade` no cálculo de valores;
-- impacto de operações com `DELETE ... ON DELETE CASCADE`.
+Alguns exercícios permanecem em desenvolvimento. Antes de utilizar os scripts em um ambiente de produção, é necessário revisar sintaxe, nomes de tabelas e colunas, regras de integridade, consultas incompletas e cálculos específicos de cada exercício.
 
-## Próximos passos
+## 🚀 Próximos passos
 
-- Revisar e corrigir os exercícios incompletos.
-- Separar scripts de estudo de scripts finalizados.
-- Criar consultas analíticas mais completas.
-- Documentar o modelo relacional.
-- Adicionar exemplos de transações com `COMMIT` e `ROLLBACK`.
-- Evoluir o projeto para análises de negócio.
+- Revisar e corrigir exercícios em desenvolvimento
+- Separar scripts de estudo e scripts finalizados
+- Criar consultas analíticas mais completas
+- Documentar o modelo relacional
+- Adicionar exemplos práticos de transações com `COMMIT` e `ROLLBACK`
+- Evoluir o projeto para análises de negócio
+
+## 🛠️ Tecnologias
+
+- **SQL**
+- **SQLite**
+- **Banco de Dados Relacional**
 
 ---
 
-**Tecnologias:** SQL · SQLite · Banco de Dados Relacional
-#
+📌 **Objetivo do repositório:** registrar a evolução prática nos estudos de SQL e construir uma base de projetos para portfólio na área de Dados.
